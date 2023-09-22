@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+
+		<script>
+			function checkEligibility(){
+			
+			age=parseInt(document.getElementById("age").value)
+			result=(age >= 18)?"You are Eligible":"You are not Eligible"
+			
+			clr=(age >=18)?"green":"red"
+			
+			document.getElementById("res").innerHTML=result
+			document.getElementById("res").style="color:"+clr
+			
+		      }
+			
+
+		</script>	
+	    </head>
+		<body>
+			<input type="number" placeholder="Enter your age" id="age"/>
+			<label id="res"></label>
+			<button onclick="checkEligibility()">check</button>
+			
+			
+			
+
+		    
+
+
+
+
+		</body>
+	    
+	</html>

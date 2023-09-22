@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+
+		<script>
+			function add(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").style.fontSize="45px"
+			document.getElementById("res").innerHTML="The Sum is "+(a+b)
+		
+		    }
+			function total(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").innerHTML="The Average is "+((a+b)/2.0)
+			
+		    }
+
+		</script>	
+	    </head>
+		<body>
+			<input type="Numbers" id="n1" placeholder="First Number"/></br>
+			<input type="Numbers" id="n2" placeholder="Second Number"/></br>
+			<div id="res"></div>
+			
+			<button onclick="add()">Add</button>
+			<button onclick="total()">Avg</button>
+			
+
+		    
+
+
+
+
+		</body>
+	    
+	</html>

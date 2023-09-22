@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+
+			
+	    </head>
+		<body>
+			<input type="text" id="big"/>
+			<label id="res"></label>
+			<button onclick="check()">Check Eligibility</button>
+			
+		<script>
+			function check(){
+			
+			big=document.getElementById("big").value
+			x=parseInt(big)
+			
+			if(x >= y){
+				var clr="green"
+				var data="bigger"
+			}
+			else{
+				var clr="red"
+				var data="smaller"
+			}
+				document.getElementById("res").innerHTML=data
+				document.getElementById("res").style="color:"+clr
+			}
+			
+
+		</script>
+			

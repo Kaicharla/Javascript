@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+
+			
+	    </head>
+		<body>
+			<input type="number" placeholder="Enter your age" id="age"/>
+			<label id="res"></label>
+			<button onclick="check()">Check Eligibility</button>
+			
+		<script>
+			function check(){
+			
+			age=document.getElementById("age").value
+			x=parseInt(age)
+			
+			if(x >= 18){
+				var clr="green"
+				var data="You are Eligible"
+			}
+			else{
+				var clr="red"
+				var data="You are not eligible"
+			}
+				obj=document.getElementById("res").innerHTML=data
+				obj=document.getElementById("res").style="color:"+clr
+			}
+			
+
+		</script>
+			
+
+		    
+
+
+
+
+		</body>
+		
+		    
+	</html>

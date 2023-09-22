@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+		<style>
+		.num{
+			width: 350px;
+			border: 15px solid black ;
+			padding: 50px;
+			margin: 20px;
+			margin-left:35%;
+			margin-top:16%;
+			
+		
+		}
+		</style>
+		<script>
+			function add(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").value=" "+(a+b)
+			
+		    }
+			function sub(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").value=" "+(a-b)
+			
+		    }
+			function mul(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").value=" "+(a*b)
+			
+		    }
+			function div(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").value=" "+(a/b)
+			
+		    }
+			function avg(){
+			x=document.getElementById("n1").value
+			y=document.getElementById("n2").value
+			a=parseInt(x)
+			b=parseInt(y)
+			document.getElementById("res").value=" "+((a+b)/2.0)
+			
+		    }
+		</script>	
+	    </head>
+		<body style="text-align:center;">
+		   <div class="num">
+			<input type="Numbers" id="n1" placeholder="First Number"/></br>
+			<input type="Numbers" id="n2" placeholder="Second Number"/></br>
+			<input id="res" disabled/><br/>
+			
+			<button onclick="add()">Add</button>
+			<button onclick="sub()">Sub</button>
+			<button onclick="mul()">Mul</button>
+			<button onclick="div()">Div</button>
+			<button onclick="avg()">Avg</button>
+		   </div>
+
+		    
+
+
+
+
+		</body>
+	    
+	</html>

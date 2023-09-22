@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<html>
+	    <head>
+		<style>
+		.a{
+			text-align:center;
+			padding:80px;
+			
+			 
+		
+		}
+		
+		.b{
+			
+			display:flex;
+			margin-left:35%;
+		}
+		
+		.c{
+			text-align:center;
+			margin-top:10%;
+		}
+		
+		.d{
+		border:15px solid green;
+		
+		}
+		
+		
+		
+		
+		
+		</style>
+		<script>
+		     function getInt(id)
+		{
+			x=parseInt(document.getElementById(id).value)
+			return x
+		}
+
+
+		    function total()	
+		{
+			a=getInt("n1")
+			b=getInt("n2")
+			c=getInt("n3")
+			d=getInt("n4")
+			e=getInt("n5")
+			f=getInt("n6")
+			
+			
+		
+			total=a+b+c+d+e+f
+			
+			document.getElementById("res").value=total
+			}
+			function avg(){
+			x=document.getElementById("avg").value=(total/6.0)
+			}
+			function grade(){
+		
+			var y=x;
+			var data;
+			if(x >= 95){
+			data ='O';
+			}
+			else if (x >= 90){
+			data ='A';
+			}
+			else if(x >= 80){
+			data ='B';
+			}
+			else if(x >= 65){
+			data ='C';
+			}
+			else if(x >= 50){
+			data ='D';
+			}
+			else if(x  <= 49){
+			data ='F';
+			}
+			
+			document.getElementById("grd").value=data
+		}	
+		
+		</script>
+	    </head>
+
+		<body>
+		<div class="d">
+		   <div class="a">
+			<input type="subject" id="n1" placeholder="Telugu"/></br>
+			<input type="subject" id="n2" placeholder="Hindi"/></br>
+			<input type="subject" id="n3" placeholder="English"/></br>
+			<input type="subject" id="n4" placeholder="Maths"/></br>
+			<input type="subject" id="n5" placeholder="Science"/></br>
+			<input type="subject" id="n6" placeholder="Social"/></br>
+		    </div>
+			
+			<div class="b">
+			
+			<input id="res" disabled/></br>
+			<input id="avg" disabled/></br>
+			<input id="grd" disabled/></br>
+			</div>
+			
+			<div class="c">
+			<button onclick="total()">Total</button>
+			<button onclick="avg()">Average</button>
+			<button onclick="grade()">Grade</button>
+		  </div>
+		  </div>
+		  </div>
+		</body>
+	</html>

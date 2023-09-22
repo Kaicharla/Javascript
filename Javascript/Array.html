@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            padding: 2%;
+            border: 2px solid black;
+            background-color: gray;
+            width: 30%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter a new model car" id="nc">
+
+    <button onclick="addCar()">Add</button>
+    <div id="lst"></div>
+
+    <script>
+        var cars = []
+        var idx = 0
+        var data = ''
+
+        function addCar() {
+            name = document.getElementById("nc").value
+            cars[idx] = name;
+            idx++;
+
+            for (var i = 0; i < idx; i++) {
+                data = data + "<label>" + cars[i] + "</label>" + "<br>"
+            }
+            document.getElementById("lst").innerHTML = data
+            document.getElementById("nc").value = ""
+            data = ""
+        }
+    </script>
+</body>
+
+</html>
